@@ -167,14 +167,49 @@
                     <view key="view" contentMode="scaleToFill" id="QK6-7A-9k2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FvX-3m-kdr" userLabel="PlaceholderTextView" customClass="PlaceholderTextView" customModule="Lesson11HW" customModuleProvider="target">
+                                <rect key="frame" x="20" y="123" width="353" height="213"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m14-x6-WVI">
+                                <rect key="frame" x="157.66666666666666" y="386" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98J-aw-Tyy" userLabel="TextViewCountLabel">
+                                <rect key="frame" x="332" y="356" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KIW-dm-bXq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="98J-aw-Tyy" firstAttribute="top" secondItem="FvX-3m-kdr" secondAttribute="bottom" constant="20" id="2Nd-Cb-fp4"/>
+                            <constraint firstItem="FvX-3m-kdr" firstAttribute="top" secondItem="KIW-dm-bXq" secondAttribute="top" constant="20" id="3E7-Et-Ntv"/>
+                            <constraint firstItem="m14-x6-WVI" firstAttribute="centerX" secondItem="KIW-dm-bXq" secondAttribute="centerX" id="8ce-hI-fdP"/>
+                            <constraint firstItem="KIW-dm-bXq" firstAttribute="trailing" secondItem="98J-aw-Tyy" secondAttribute="trailing" constant="50" id="EAA-u7-2Ad"/>
+                            <constraint firstItem="FvX-3m-kdr" firstAttribute="height" secondItem="QK6-7A-9k2" secondAttribute="height" multiplier="0.25" id="JX5-uu-1fg"/>
+                            <constraint firstItem="FvX-3m-kdr" firstAttribute="leading" secondItem="KIW-dm-bXq" secondAttribute="leading" constant="20" id="Lnv-Ay-ISe"/>
+                            <constraint firstItem="m14-x6-WVI" firstAttribute="top" secondItem="FvX-3m-kdr" secondAttribute="bottom" constant="50" id="cnl-1Y-gsD"/>
+                            <constraint firstItem="KIW-dm-bXq" firstAttribute="trailing" secondItem="FvX-3m-kdr" secondAttribute="trailing" constant="20" id="u3c-ig-X3Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contact Us" id="PgA-QQ-ctl"/>
+                    <connections>
+                        <outlet property="charCountLabel" destination="98J-aw-Tyy" id="nfP-R3-utt"/>
+                        <outlet property="inputTextView" destination="FvX-3m-kdr" id="LuJ-8K-qHx"/>
+                        <outlet property="submitButton" destination="m14-x6-WVI" id="jC1-xu-01z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSg-si-jKo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1378" y="737"/>
+            <point key="canvasLocation" x="1377.8625954198474" y="736.61971830985919"/>
         </scene>
         <!--Profile-->
         <scene sceneID="jwh-za-pYr">
